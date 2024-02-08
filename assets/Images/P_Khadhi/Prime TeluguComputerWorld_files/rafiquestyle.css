@@ -1,0 +1,54 @@
+/*
+ *   Rafique Style
+ *   Author: Rafique Mohammad
+ *   Website: https://www.telugucomputerworld.com
+ */
+
+.brand-text {
+    color: rgb(98, 0, 255);
+}
+
+/* Nav */
+.nav-link {
+    font-size: 18px;
+}
+
+.main-header .navbar-nav .nav-item a:hover {
+    color: red;
+}
+
+/* Login Page Styles */
+.login-page {
+    height: 72vh;
+}
+
+.login-box {
+    width: 390px;
+}
+
+/* Thumb Zoom Effect */
+.z-thumb-parent{
+    max-width: 100%;
+    overflow: hidden;
+}
+.z-thumb:hover{
+    transform: scale(1.2,1.2);
+    transition: transform 0.9s ease-in-out;
+    cursor: pointer; 
+}
+.bw.z-thumb:hover{
+    filter: grayscale(100%);
+    transform: scale(1.2,1.2);
+    transition: transform 0.9s ease-in-out, filter 0.9s ease-in-out;
+    cursor: pointer; 
+}
+.z-thumb{
+    transform: scale(1,1);
+    transition: transform 0.9s ease-in-out, filter 0.9s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-text {
+      font-size: 4vw;
+    }
+}

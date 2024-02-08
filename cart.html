@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Products</title>
+     <!-- Icon Link -->
+     <link rel = "icon" href = 
+     "/assets/logo.png" 
+             type = "image/x-icon">
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----- Bootstrap CSS ------>
+    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <!-- OWL Carousel 2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Custom Css-->
+     <link rel="stylesheet" href="/CSS/style.css">
+     <!-- <link rel="stylesheet" href="/CSS/my_vars.css"> -->
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg py-2 px-2 px-sm-4 fixed-top">
+        <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+            <img src="assets/logo.png" alt="BrandLogo">
+            <span class="text-uppercase fw-bold clr-one">Unique Products</span>
+        </a>
+        <div class="order-lg-2">
+            <div class="cart-box d-inline-block">
+                <a href="cart.html" class="rounded-pill bg-dark py-2">
+                    <span class="px-2 text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span class="rounded-pill bg-light text-dark px-3 py-2">2</span>
+                </a>
+            </div>
+            <button class="btn ms-1">
+                <i class="fa-solid fa-user"></i>
+                <span class="fw-bold ">Login</span>
+            </button>
+        </div>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav text-center mx-auto">
+                <li class="nav-item p-2">
+                    <a class="nav-link text-dark text-capitalize fz-20" href="index.html">home</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-dark text-capitalize fz-20" href="#top-sale">top sale</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-dark text-capitalize fz-20" href="#category">category</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-dark text-capitalize fz-20" href="#about">about us</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-dark text-capitalize fz-20" href="products.html">products</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /Nav -->
+
+
+
+    <!-- Main -->
+    <div id="main">
+       
+        <!-- Cart -->
+        <section  id="cart">
+            <div class="container-fluid p-5 mt-5">
+                <div class="section-title text-start">
+                    <h3 class="text-dark">Shopping Cart</h3>
+                </div>
+                
+                <div class="row">
+                    <!-- Cart Items -->
+                    <div class="col-sm-9">
+
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-3">
+                                <img src="/assets/Images/Etikoppaka/p27.jpg" alt="Cart item 1" style="height: 120px;">
+                            </div>
+                            <div class="col-sm-7 pt-2">
+                                <h5>Musicians</h5>
+                                <small>by <span class="clr-one">Etikoppaka</span></small>
+                                <!-- rating -->
+                                <div class="d-flex py-1">
+                                    <div class="rating text-warning fz-12">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <a href="#" class="ms-2 clr-one">999 ratings</a>
+                                </div>
+                                <!-- /rating -->
+                                <div class="qty d-flex py-2">
+                                    <div class="d-flex">
+                                        <button class="btn qty-down bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                        <input type="text" class="qty-input form-control text-center w-25 p-1" style="min-width: 42px;" value="1" disabled>
+                                        <button class="btn qty-up bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <button class="btn text-danger fz-14 px-2">Delete</button>
+                                    <button class="btn text-warning fz-14 px-2 ms-1">Save for Later</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-sm-end py-3 py-sm-0">
+                                <div class="fz-18 text-danger">
+                                    ₹<span class="price">1530</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Cart Item -->
+                        
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-3">
+                                <img src="/assets/Images/B_Veena/q1.jpg" alt="Cart item 1" style="height: 120px;">
+                            </div>
+                            <div class="col-sm-7 pt-2">
+                                <h5>Veena</h5>
+                                <small>by <span class="clr-one">Bobbili</span></small>
+                                <!-- rating -->
+                                <div class="d-flex py-1">
+                                    <div class="rating text-warning fz-12">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <a href="#" class="ms-2 clr-one">9999 ratings</a>
+                                </div>
+                                <!-- /rating -->
+                                <div class="qty d-flex py-2">
+                                    <div class="d-flex">
+                                        <button class="btn qty-down bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                        <input type="text" class="qty-input form-control text-center w-25 p-1" style="min-width: 42px;" value="1" disabled>
+                                        <button class="btn qty-up bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <button class="btn text-danger fz-14 px-2">Delete</button>
+                                    <button class="btn text-warning fz-14 px-2 ms-1">Save for Later</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-sm-end py-3 py-sm-0">
+                                <div class="fz-18 text-danger">
+                                    ₹<span class="price">15800</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Cart Item -->
+
+                    </div>
+                    <!-- /Cart Items -->
+                    <div class="col-sm-3">
+                        <!-- sub-total -->
+                        <div id="sub-total" class="border text-center mt-3">
+                           <p class="text-success pt-2 fz-12"><i class="fa fa-check me-1"></i>Your order is eligible for Free Delivery</p>
+                            <div class="border-top py-4">
+                                <h6 class="ff-one">Subtotal (2 Items) : <span class="text-danger">₹17330</span></h6>
+                                <button class="btn btn-warning mt-3" type="submit">Proceed to Buy</button>
+                            </div>
+                        </div>
+                        <!-- /sub-total -->
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- /Cart -->
+
+      <!-- Top-sale -->
+            <section id="top-sale">
+                <div class="container py-5">
+                    <div class="section-title pt-5">
+                        <h3>Top Sale</h3>
+                    </div>
+                    <!-- Owl Carousel -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/Etikoppaka/p27.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Musicians</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/Etikoppaka/p28.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Caring Mother</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/Buduthi/i12.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Lord RadhaKrishna</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/Buduthi/i10.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Lord Vinayaka</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/B_Veena/q1.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Bobbili Veena - I</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/B_Veena/q6.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Bobbili Veena - II</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/P_Khadhi/ph3.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Pink Saree</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+                        <div class="item py-2">
+                            <div class="product px-lg-4 px-2">
+                                <a href="#">
+                                    <img src="assets/Images/P_Khadhi/ph4.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="pro-details text-center py-lg-5 py-3">
+                                <h6>Blue Saree</h6>
+                                <div class="rating text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="price-box py-2">
+                                    <small><s>₹199</s></small>
+                                    <span class="price ms-1">₹153</span>
+                                </div>
+                                <button class="btn btn-sm btn-warning">Add To Cart</button>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                    <!-- /Owl Carousel -->
+    
+            </section>
+     <!-- /Top-sale -->
+    </div>
+
+   <!-- /Main -->
+
+<!-- Footer -->
+<div id="footer" class="bg-dark text-white">
+    <div class="container py-3">
+       <div class="row">
+            <div class="col-md-4 col-sm-6 py-3">
+                <h5>Unique Products</h5>
+                <p class="text-white-50 fz-16">Welcome to our <b>Unique Products</b> e-commerce website ! <br>We are dedicated to bringing you the finest local area products that showcase the rich cultural heritage and craftsmanship of our region. From the exquisite Ponduru Khadi textiles to the charming Etikoppaka wooden toys, the timeless Budithi brass items to the soul-stirring Bobbili veena, we offer a curated collection of authentic treasures.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 py-3">
+                <h5 class="text-center">Contact Us</h5>
+                <div id="icon">
+                  <a href="https://www.instagram.com"><span><i class="fa-brands fa-instagram" aria-hidden="true"></i></span></a>  
+                  <a href="https://www.facebook.com"><span><i class="fa-brands fa-facebook" aria-hidden="true"></i></span></a>  
+                  <a href="https://www.twitter.com"><span><i class="fa-brands fa-twitter" aria-hidden="true"></i></span></a> 
+                  <a href="https://www.linkedin.com"><span><i class="fa-brands fa-linkedin" aria-hidden="true"></i></span></a>    
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 py-3">
+                <h5>Information</h5>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="text-white-50 mb-1">Delivary Info</a>
+                    <a href="#" class="text-white-50 mb-1">Privacy Policy</a>
+                    <a href="#" class="text-white-50 mb-1">Terms & Conditions</a>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+<!-- /Footer -->
+
+    <!--------  J-Query JS ------->
+    <script src="/Js/jquery-3.6.4.min.js"></script>
+    <!----- Bootstrap JS ------>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- OWL Carousel 2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Isotope JS  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js" integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS-->
+    <script src="/Js/script.js"></script>
+</body>
+</html>

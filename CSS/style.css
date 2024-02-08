@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Spectral&display=swap');
+@import 'my_vars.css';
+@import 'my_classes.css';
+
+body {
+    font-family: var(--font-one);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-two);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    border:none !important;
+}
+
+/* Nav */
+nav {
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 3px 9px rgba(0,0,0,0.08);
+}
+.navbar-brand img{
+    width: 32px;
+    border-radius: 25%;
+}
+
+.nav-item {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-link:hover {
+    color: var(--color-one) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* /Nav */
+
+/* Section-Title */
+
+.section-title {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-title h3 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+    color: var(--color-one);
+}
+
+.section-title h3::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: var(--color-two);
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%);
+    animation: lineWidth 3s ease-in-out infinite;
+}
+
+/* Top Sale */
+
+#top-sale .product a {
+    overflow: hidden;
+}
+
+#top-sale .product img {
+    transition: all 0.5s ease-in-out;
+}
+
+#top-sale .product img:hover {
+    transform: scale(1.1);
+}
+
+
+#top-sale .owl-carousel .owl-nav button {
+    position: absolute;
+    top : 30%;
+    outline: none;
+}
+
+#top-sale .owl-carousel .owl-nav button span {
+    font-size: 35px;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+    left : 0;
+    margin: -12px;
+}
+
+#top-sale .owl-carousel .owl-nav button.owl-next {
+    right : 0;
+    margin: -12px;
+}
+
+#top-sale .owl-carousel .owl-nav button:hover {
+    background-color: #fff;
+    color: var(--color-one);
+}
+
+/* category */
+
+#category .grid-item {
+    width: 200px;
+}
+
+
+#category .grid-item img {
+    padding: 2px;
+    transition: all 0.5s ease-in-out;
+}
+#category .grid-item img:hover {
+    transform: scale(1.1);
+}
+
+#filters button {
+    margin: 6px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+#filters button:hover,
+#filters button.active-filter {
+    background-color: var(--color-one);
+    color: #fff;
+}
+
+#about {
+  padding-bottom: 150px;
+}
+
+/* Icons */
+#icon {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#icon span i {
+  margin: 0px 10px;
+  font-size: 30px;
+  color:#ffffff8e;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+#icon span i:hover {
+  font-size: 36px;
+  color: var(--color-one) /* Change the color to your desired value */
+}
+#icon span:last-child {
+  margin-right: 0;
+}
+
+/* /Icons */
+
+    /* Animations */
+    @keyframes lineWidth {
+        50% {
+            width: 100%;
+        }
+    }
+
+
+    /* Media Queries */
+
+@media (min-width: 992px){
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+/* Footer Links */
+
+#footer a:hover {
+  color: var(--color-one) !important;
+}
+/* /Footer Links */
+
